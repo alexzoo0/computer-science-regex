@@ -1,10 +1,14 @@
-# Title (replace with your title)
+# Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+Regex refers to Regular Expressions, regex is used in many programing languages so developers can find specific combination of characters. Regular Expressions allows a programmer to search  for variations of string matching a specific pattern rather than being limited to a query. Having this in mind think about a large database with 100,000 users (with name, last name,  email) and you need to find someone by their email. 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+In this tutorial we will learn how use regex(Regular Expression) to match an email. Below you'll see an example of what is used to verify user input is a vaild email address.
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+Let's get started.
 
 ## Table of Contents
 
@@ -23,8 +27,18 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+To start off, regular expressions begin and end with foward slash "/", In regular expression for matching an email address, we have surrounded our RegEx search with the anchors ^ and $ to identify that the enclosed search pattern should not have any other characters, including spaces, before or after it. Within the foward slash we encounter a caret (^) anchor which identefies the beginning of a string and the dolllar sign ($) identefies as the end of the string. The metacharacter (/b) is used to identify the begining or end of a word.
+
+lets think about this for a second, if you use RegEx to search for /book/ it'll return "book" wherever its located because it does not care about the positioning within the string. if we plug in "$" we get /book$/ and will only find "book" located at the end of the string. if we use /^book/ it wont return any matches, since there are no instances that start with "book" in the begining of a string. lastly if we want to only look for the word book we enclose the RegEx search. (/\bbook\b/).
+
 
 ### Quantifiers
+Quantifiers are instances of a character, group, class must be present in the input to find a match.
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
 
 ### OR Operator
 
@@ -46,4 +60,5 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Written by Alexis Velasquez a full stack developer. for more information on the author checkout his github 
+Github: https://github.com/alexzoo0
