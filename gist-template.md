@@ -65,12 +65,13 @@ Character Class    |    Meaning
 -----------------  | -------------- 
 a-z                | Match any letter within the range of lowercase a to lowercase z.            
 0-9                | Search any digit which is between the brackets            
-@                  | Match literal at signs. Found following the first parenthetical group in our email RegEx.            
-\.                 | Match literals dot (.). Dots have special functions in regular expression. The backslash (\) is used to escape the character.         
+@                  | Match literal at signs. Found following the first parenthetical group in our email RegEx.  
 -                  | Match literal hyphens.        
 \d                 | Match a digit or a character from 0 to 9
 _                  | Match literal underscores. 
-\D                 | Matches any character that is not a digit 
+\D                 | Matches any character that is not a digit           
+\.                 | Match literals dot (.). Dots have special functions in regular expression. The backslash (\) is used to escape the character.         
+
 
  
 
