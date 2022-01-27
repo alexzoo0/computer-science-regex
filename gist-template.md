@@ -34,14 +34,14 @@ lets think about this for a second, if you use RegEx to search for /book/ it'll 
 Quantifiers are instances of a character, group, class must be present in the input to find a match. 
 Below are few quanifiers.
 
-Greedy Quantifier | Lazy Quatifier |  Description 
------------------ | -------------- | -------------
-*                 | *?             | Match zero or more times.
-+                 | +?             | Match one or more times.
-?                 | ??             | Match zero or one time.
-{ n }             | { n }?         | Match exactly n times.
-{ n ,}            | { n ,}?        | Match at least n times.
-{ n , m }         | { n , m }?     | Match from n to m times.
+| Greedy Quantifier | Lazy Quatifier |  Description |
+| ----------------- | -------------- | ------------- |
+| *                 | *?             | Match zero or more times. |
+| +                 | +?             | Match one or more times. |
+| ?                 | ??             | Match zero or one time. |
+| { n }             | { n }?         | Match exactly n times. |
+| { n ,}            | { n ,}?        | Match at least n times. |
+| { n , m }         | { n , m }?     | Match from n to m times. |
 
 The email RegEx uses a plus (+) and brace ({....}) qunatifiers, here is an example shown here:
 
